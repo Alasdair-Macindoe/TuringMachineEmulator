@@ -1,0 +1,94 @@
+states 20
+q0
+q1
+q2
+q3
+q4
+q5
+q6
+q7
+q8
+q9
+q10
+q11
+r1
+r2
+r3
+a1
+a2
+a3
+qa +
+qr -
+alphabet 3 0 1 #
+q0 1 q1 _ R
+q0 0 q8 _ R
+q0 # qr # R
+q0 _ qr _ R
+q1 1 q1 1 R
+q1 0 q1 0 R
+q1 # q2 # R
+q1 _ qr _ R
+q2 1 q3 _ R
+q2 0 q6 _ R
+q2 # q7 # R
+q2 _ q2 _ R
+q3 1 q3 0 R
+q3 0 q4 1 R
+q3 # q10 # R
+q3 _ qr _ R
+q4 1 q4 1 R
+q4 0 q4 0 R
+q4 # q5 # R
+q4 _ qr _ R
+q5 1 qr 1 R
+q5 0 a1 _ R
+q5 # qr # R
+q5 _ q5 _ R
+q6 1 q6 1 R
+q6 0 q6 0 R
+q6 # q7 # R
+q6 _ q7 _ R
+q7 1 a1 _ L
+q7 0 qr 0 R
+q7 # qr # R
+q7 _ q7 _ R
+q8 1 q8 1 R
+q8 0 q8 0 R
+q8 # q9 # R
+q8 _ qr _ R
+q9 1 q6 _ R
+q9 0 q4 _ R
+q9 # q4 # R
+q9 _ q9 _ R
+q10 1 q1 1 R
+q10 0 q11 _ R
+q10 # qr # R
+q10 _ q10 _ R
+q11 1 a1 _ R
+q11 0 qr 0 R
+q11 # qr # R
+q11 _ qr _ R
+r1 1 r1 1 L
+r1 0 r1 0 L
+r1 # q2 # L
+r1 _ r1 _ L
+r2 1 r2 1 L
+r2 0 r2 0 L
+r2 # r3 # L
+r2 _ r2 _ L
+r3 1 r3 1 L
+r3 0 r3 0 L
+r3 # qr # L
+r3 _ q0 _ R
+a1 1 r1 1 L
+a1 0 r1 0 L
+a1 # a2 # L
+a1 _ a1 _ L
+a2 1 r2 1 L
+a2 0 r2 0 L
+a2 # a3 # L
+a2 _ a2 _ L
+a3 1 r3 1 L
+a3 0 r3 0 L
+a3 # qr # L
+a3 _ qa _ L

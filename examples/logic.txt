@@ -1,0 +1,166 @@
+states 20
+q0
+q1
+q2
+q3
+q4
+q5
+q6
+q7
+q8
+q9
+a1
+a2
+o1
+o2
+r1
+r2
+r3
+r4
+qa +
+qr -
+alphabet 7 1 0 ^ | & = $
+q0 $ q1 $ R
+q0 1 qr 1 R
+q0 0 qr 0 R
+q0 ^ qr ^ R
+q0 & qr & R
+q0 | qr | R
+q0 = qr = R
+q0 _ qr _ R
+q1 $ qr $ R
+q1 1 q8 _ R
+q1 0 q2 _ R
+q1 ^ qr ^ R
+q1 & qr & R
+q1 | qr | R
+q1 = qr = R
+q1 _ q1 _ R
+q2 $ qr $ R
+q2 1 q2 1 R
+q2 0 q2 0 R
+q2 ^ q3 ^ R
+q2 & a1 & R
+q2 | o2 | R
+q2 = qr = R
+q2 _ qr _ R
+q3 $ qr $ R
+q3 1 q6 _ R
+q3 0 q4 _ R
+q3 ^ qr ^ R
+q3 & qr & R
+q3 | qr | R
+q3 = qr = R
+q3 _ q3 _ R
+q4 $ qr $ R
+q4 1 q4 1 R
+q4 0 q4 0 R
+q4 ^ qr ^ R
+q4 & qr & R
+q4 | qr | R
+q4 = q5 = R
+q4 _ q4 _ R
+q5 $ qr $ R
+q5 1 qr 1 R
+q5 0 r1 _ L
+q5 ^ qr ^ R
+q5 & qr & R
+q5 | qr | R
+q5 = qr = R
+q5 _ q5 _ R
+q6 $ qr $ R
+q6 1 q6 1 R
+q6 0 q6 0 R
+q6 ^ qr ^ R
+q6 & qr & R
+q6 | qr | R
+q6 = q7 = R
+q6 _ q6 _ R
+q7 $ qr $ R
+q7 1 r1 _ L
+q7 0 qr 0 R
+q7 ^ qr ^ R
+q7 & qr & R
+q7 | qr | R
+q7 = qr = R
+q7 _ q7 _ R
+q8 $ qr $ R
+q8 1 q8 1 R
+q8 0 q8 0 R
+q8 ^ q9 ^ R
+q8 & a2 & R
+q8 | o1 | R
+q8 = qr = R
+q8 _ qr _ R
+q9 $ qr $ R
+q9 1 q4 _ R
+q9 0 q6 _ R
+q9 ^ qr ^ R
+q9 & qr & R
+q9 | qr | R
+q9 = qr = R
+q9 _ q9 _ R
+a1 $ qr $ R
+a1 1 q4 _ R
+a1 0 q4 _ R
+a1 ^ qr ^ R
+a1 & qr & R
+a1 | qr | R
+a1 = qr = R
+a1 _ a1 _ R
+a2 $ qr $ R
+a2 1 q6 _ R
+a2 0 q4 _ R
+a2 ^ qr ^ R
+a2 & qr & R
+a2 | qr | R
+a2 = qr = R
+a2 _ a2 _ R
+o1 $ qr $ R
+o1 1 q6 _ R
+o1 0 q6 _ R
+o1 ^ qr ^ R
+o1 & qr & R
+o1 | qr | R
+o1 = qr = R
+o1 _ o1 _ R
+o2 $ qr $ R
+o2 1 q6 _ R
+o2 0 q4 _ R
+o2 ^ qr ^ R
+o2 & qr & R
+o2 | qr | R
+o2 = qr = R
+o2 _ o2 _ R
+r1 $ qr $ R
+r1 1 r4 1 L
+r1 0 r4 0 L
+r1 ^ qr ^ R
+r1 & qr & R
+r1 | qr | R
+r1 = r2 = L
+r1 _ r1 _ L
+r2 $ qr $ R
+r2 1 r4 1 L
+r2 0 r4 0 L
+r2 ^ r3 ^ L
+r2 & r3 & L
+r2 | r3 | L
+r2 = qr = R
+r2 _ r2 _ L
+r3 $ qa $ R
+r3 1 r4 1 L
+r3 0 r4 0 L
+r3 ^ qr ^ R
+r3 & qr & R
+r3 | qr | R
+r3 = qr = R
+r3 _ r3 _ L
+r4 $ q1 $ R
+r4 1 r4 1 L
+r4 0 r4 0 L
+r4 ^ r4 ^ L
+r4 & r4 & L
+r4 | r4 | L
+r4 = r4 = L
+r4 _ r4 _ L

@@ -1,0 +1,32 @@
+states 9
+q0
+q1
+q2
+q3
+q4
+q5
+q6
+qa +
+qr -
+alphabet 2 0 1
+q0 0 q1 0 R
+q0 1 q2 1 R
+q0 _ qr _ R
+q1 0 q1 0 R
+q1 1 q4 1 R
+q1 _ qa _ R
+q2 0 q2 0 R
+q2 1 q3 1 R
+q2 _ q6 _ L
+q3 0 q1 0 R
+q3 1 q4 1 R
+q3 _ q6 _ L
+q4 0 q2 0 R
+q4 1 q1 1 R
+q4 _ q5 _ L
+q5 0 qa 0 R
+q5 1 qr 1 R
+q5 _ qr _ R
+q6 0 qr 0 R
+q6 1 qa 1 R
+q6 _ qr _ R
